@@ -1008,10 +1008,20 @@ html {
     height: 250px;
 }
 
-.project-image img {
+/* .project-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: all var(--duration-normal) var(--ease-standard);
+} */
+.project-image img {
+    width: 100%;
+    height: auto; /* allow natural height */  /* show full image with possible letterboxing */
+    object-fit: contain; /* So the whole image shows */
+    background: #fff; /* optional: makes letterbox area white */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     transition: all var(--duration-normal) var(--ease-standard);
 }
 
@@ -1209,6 +1219,13 @@ footer .social-links a:hover {
     .resume-section, .video-section {
         padding: var(--space-24);
     }
+
+    .iframe {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
     
     .contact-item {
         padding: var(--space-24) var(--space-16);
