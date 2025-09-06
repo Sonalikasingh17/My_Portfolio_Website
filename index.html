@@ -1,348 +1,378 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Section</title>
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-<style>
-  .about-section {
-    text-align: center;
-    padding: 50px 0;
-  }
-  .about-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  .about-section img {
-    width: 200px; /* Adjust the size as needed */
-    height: 200px;
-    border-radius: 50%; /* Makes the image round */
-    margin-bottom: 20px;
-  }
-  .about-section p {
-    color: #333;
-  }
-
-  /* Additional CSS for Projects Section */
-.projects-section h2 {
-  margin-bottom: 40px;
-  font-size: 2.5rem;
-}
-.card {
-  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow around the card */
-}
-.card-img-top {
-  max-height: 180px; /* Adjust this value to fit the image properly in the card */
-  object-fit: cover; /* This makes sure the image covers the area properly */
-}
-.card-body {
-  padding: 15px;
-}
-.card-title {
-  font-size: 1.25rem;
-}
-.card-text {
-  margin-bottom: 15px;
-}
-
-/* Additional CSS for Skills Section */
-.skills-section h2 {
-  margin-bottom: 40px;
-  font-size: 2.5rem;
-}
-.skills-section .card {
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-.skills-section .card-img-top {
-  padding: 20px; /* Add padding around your images if needed */
-  background-color: #f8f9fa; /* Adjust the background color if your images have transparent areas */
-  height: 180px; /* Fixed height for consistency */
-  object-fit: contain; /* This will make sure the image is scaled properly within the container */
-}
-.skills-section .card-body {
-  padding: 15px;
-}
-.skills-section .card-title {
-  font-size: 1.25rem;
-  margin-bottom: 15px;
-}
-.skills-section .btn-outline-primary {
-  color: #007bff;
-  border-color: #007bff;
-}
-.skills-section .btn-outline-primary:hover {
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
-}
-
-/* Additional CSS for Contact Section */
-.contact-section {
-  padding: 50px 0;
-}
-.contact-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-}
-.contact-section p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-.social-icon {
-  width: 50px; /* Size of your icons */
-  margin-bottom: 10px;
-}
-/* Hover effect for icons */
-.social-icon:hover {
-  opacity: 0.7;
-}
-/* Style for links in the Contact section */
-.contact-section a {
-  color: #fff;
-  text-decoration: none; /* Removes underline from links */
-  display: inline-block; /* Allows for margin on the bottom */
-  margin-bottom: 10px;
-}
-.contact-section a:hover {
-  color: #ddd; /* Color when hovering over the link */
-}
-
-/* CSS for Sticky Navbar */
-.navbar {
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds a shadow for depth */
-}
-
-/* Ensure padding is added to body to avoid content being hidden behind the navbar */
-body { 
-  padding-top: 56px; /* Adjust this value based on the height of your navbar */
-}
-
-/* Smooth scroll */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Style for navigation bar links */
-.navbar-nav .nav-link {
-  color: white;
-}
-
-.navbar-nav .nav-link:hover {
-  color: #f8f9fa; /* Slightly lighter white when hovering over links */
-}
-
-/* Media query for responsive navbar collapsing */
-@media (max-width: 992px) {
-  .navbar-collapse {
-    background-color: #343a40; /* Same as navbar color for seamless look */
-  }
-}
-
-
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonalika Singh - Data Science Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-
-<section id='about' class="about-section">
-  <div class="container">
-    <h2>About</h2>
-    <img src="Images/about/image.jpg" alt="About Me">
-    <p>Born and raised in Bihar, India, my fascination with mathematics began early in school and shaped my analytical mindset. This passion guided me to the Indian Institute of Technology Madras, where I recently completed my Master’s in Mathematics (2025). The rigorous academic environment at IIT Madras not only deepened my knowledge but also fueled my curiosity for problem-solving, inspiring me to explore the intersection of mathematics, data science, machine learning, and analytics.</p>
-    <p>I have worked on several projects and internships, including developing groundwater prediction models, deep learning image classifiers, transliteration systems, and data imbalance solutions. My experiences at ERNET India, IIT Madras Research Park and E&ICT Academy, IIT Guwahati gave me practical exposure to applying ML and data-driven solutions in diverse domains.</p>
-    <p>Beyond academics and research, I am always eager to explore new avenues—whether it's reading compelling articles, scrolling through thought-provoking content, or taking on unique activities as personal challenges. I believe that passion and determination, reinforced by a continual spirit of exploration, pave the way to meaningful success.</p>
-    <p>I’m driven by the idea that passion and determination can turn challenges into opportunities, and I aspire to grow as a Data Scientist while combining my love for mathematics with the power of technology. </p>
-</section>
-
-
-<!-- Projects Section -->
-<section id="projects" class="projects-section bg-light" id="projects">
-  <div class="container">
-    <h2 class="text-center">Projects</h2>
-    <div class="row">
-      <!-- Project 1 -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="Images/projects/1.jpg" class="card-img-top" alt="Project 1">
-          <div class="card-body">
-            <h5 class="card-title">Project 1</h5>
-            <p class="card-text">Built a deep learning model (4 dense layers,LeakyReLU, Dropout) to perform multi-label classification on 200K+ EHR embeddings, achieving a Micro F2 score of 0.8183 on validation data and mastering threshold tuning, data engineering, and evaluation techniques.</p>
-            <a href="#" class="btn btn-primary">Blog Post</a>
-            <a href="#" class="btn btn-secondary">Source Code</a>
-          </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">Sonalika Singh</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blogs">Blogs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <!-- Project 2 -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="Images/projects/2.jpg" class="card-img-top" alt="Project 2">
-          <div class="card-body">
-            <h5 class="card-title">Project 2</h5>
-            <p class="card-text">Built and optimized Seq2Seq models (RNN, LSTM, GRU) for Roman-to-Devanagari transliteration, enhancing validation accuracy by 8% through Bayesian hyperparameter sweeps, attention mechanisms, and beam search decoding on 10,000+ samples.</p>
-            <a href="#" class="btn btn-primary">Blog Post</a>
-            <a href="#" class="btn btn-secondary">Source Code</a>
-          </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Hi, I'm <span class="text-primary">Sonalika Singh</span></h1>
+                        <h2 class="hero-subtitle">Data Science Graduate from IIT Madras</h2>
+                        <p class="hero-description">
+                            Passionate about turning numbers into solutions that make a meaningful impact. 
+                            I love transforming complex data into actionable insights through machine learning and deep learning.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary btn-lg me-3">View My Work</a>
+                            <a href="#contact" class="btn btn-outline-primary btn-lg">Get In Touch</a>
+                        </div>
+                        <div class="social-links mt-4">
+                            <a href="https://github.com/Sonalikasingh17" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com/in/your-linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://medium.com/@singhsonalika5" target="_blank"><i class="fab fa-medium"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="hero-image">
+                        <img src="profile-photo.jpg" alt="Sonalika Singh" class="img-fluid rounded-circle profile-img">
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <!-- Project 3 -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="Images/projects/3.jpg" class="card-img-top" alt="Project 3">
-          <div class="card-body">
-            <h5 class="card-title">Project 3</h5>
-            <p class="card-text">Processed 27 roman-script languages and built a Naive Bayes classifier; achieved high language prediction accuracy after RDA-based feature reduction and hyperparameter tuning.</p>
-            <a href="#" class="btn btn-primary">Blog Post</a>
-            <a href="#" class="btn btn-secondary">Source Code</a>
-          </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Get to know me better</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="about-content">
+                        <h3>My Journey</h3>
+                        <p>
+                            I'm a Mathematics graduate from IIT Madras with a passion for data science and machine learning. 
+                            My journey started from a small city in Bihar, driven by curiosity to solve real-world problems 
+                            through mathematical rigor and programming.
+                        </p>
+                        <p>
+                            During my academic journey, I've gained hands-on experience through internships at ERNET India 
+                            and IIT Guwahati, where I developed automated analysis systems and fine-tuned deep learning models.
+                        </p>
+                        <p>
+                            Besides academics, I love <strong>dancing</strong> and <strong>reading</strong> useful content 
+                            related to my field. These hobbies keep me curious, creative, and balanced.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="skills-section">
+                        <h3>Skills</h3>
+                        
+                        <h4>Technical Skills</h4>
+                        <div class="skill-item">
+                            <span>Python</span>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Machine Learning</span>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Deep Learning</span>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>SQL</span>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Data Analysis</span>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <h4 class="mt-4">Soft Skills</h4>
+                        <div class="soft-skills">
+                            <span class="badge bg-primary me-2 mb-2">Problem Solving</span>
+                            <span class="badge bg-primary me-2 mb-2">Team Collaboration</span>
+                            <span class="badge bg-primary me-2 mb-2">Communication</span>
+                            <span class="badge bg-primary me-2 mb-2">Critical Thinking</span>
+                            <span class="badge bg-primary me-2 mb-2">Creativity</span>
+                            <span class="badge bg-primary me-2 mb-2">Leadership</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+    </section>
 
-  </div>
-</section>
-       <!-- Project 4 -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="Images/projects/3.jpg" class="card-img-top" alt="Project 3">
-          <div class="card-body">
-            <h5 class="card-title">Project 3</h5>
-            <p class="card-text">Preprocessed 1M+ song lyrics using NLTK (cleaning, tokenization, stopword removal) and engineered a TF-IDF + cosine similarity model (5K features), deployed via Streamlit with Spotify API integration for interactive top-5 song recommendations.</p>
-            <a href="#" class="btn btn-primary">Blog Post</a>
-            <a href="#" class="btn btn-secondary">Source Code</a>
-          </div>
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">My Projects</h2>
+                    <p class="section-subtitle">Showcase of my technical work</p>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Project 1: Multilingual Language Classifier -->
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="multilingual-classifier.jpg" alt="Multilingual Language Classifier" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/Sonalikasingh17/multilingual-classifier" target="_blank" class="btn btn-primary">
+                                        <i class="fab fa-github"></i> View Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Multilingual Language Classifier</h4>
+                            <p>Built a Naive Bayes classifier to recognize 27 roman-script languages with high accuracy using feature reduction and hyperparameter tuning.</p>
+                            <div class="project-tech">
+                                <span class="badge bg-secondary me-1">Python</span>
+                                <span class="badge bg-secondary me-1">NLP</span>
+                                <span class="badge bg-secondary me-1">Scikit-learn</span>
+                                <span class="badge bg-secondary me-1">Feature Engineering</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Music Recommender System -->
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="music-recommender.jpg" alt="Music Recommender System" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/Sonalikasingh17/music-recommender" target="_blank" class="btn btn-primary">
+                                        <i class="fab fa-github"></i> View Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Music Recommender System</h4>
+                            <p>Preprocessed 1M+ song lyrics using NLTK and engineered a TF-IDF + cosine similarity model deployed via Streamlit with Spotify API integration.</p>
+                            <div class="project-tech">
+                                <span class="badge bg-secondary me-1">Python</span>
+                                <span class="badge bg-secondary me-1">NLTK</span>
+                                <span class="badge bg-secondary me-1">TF-IDF</span>
+                                <span class="badge bg-secondary me-1">Streamlit</span>
+                                <span class="badge bg-secondary me-1">Spotify API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: EHR Classification -->
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="ehr-classification.jpg" alt="EHR Classification" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/Sonalikasingh17/ehr-classification" target="_blank" class="btn btn-primary">
+                                        <i class="fab fa-github"></i> View Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Multi-label EHR Classification</h4>
+                            <p>Built a deep learning model with 4 dense layers to perform multi-label classification on 200K+ EHR embeddings, achieving 0.8183 Micro F2 score.</p>
+                            <div class="project-tech">
+                                <span class="badge bg-secondary me-1">Deep Learning</span>
+                                <span class="badge bg-secondary me-1">TensorFlow</span>
+                                <span class="badge bg-secondary me-1">Healthcare</span>
+                                <span class="badge bg-secondary me-1">Multi-label</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Sequence Modeling -->
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="sequence-modeling.jpg" alt="Sequence Modeling" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/Sonalikasingh17/sequence-modeling" target="_blank" class="btn btn-primary">
+                                        <i class="fab fa-github"></i> View Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Sequence Modeling for Language Decoding</h4>
+                            <p>Built and optimized Seq2Seq models (RNN, LSTM, GRU) for Roman-to-Devanagari transliteration with attention mechanisms and beam search decoding.</p>
+                            <div class="project-tech">
+                                <span class="badge bg-secondary me-1">Seq2Seq</span>
+                                <span class="badge bg-secondary me-1">LSTM</span>
+                                <span class="badge bg-secondary me-1">Attention</span>
+                                <span class="badge bg-secondary me-1">Transliteration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+    </section>
 
-  </div>
-</section>
-
-
-<!-- Skills Section -->
-<section id="skills" class="skills-section bg-white" id="skills">
-  <div class="container">
-    <h2 class="text-center">Skills</h2>
-    <div class="row">
-      <!-- Skill 1 -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card">
-          <img src="Images/skills/1.png" class="card-img-top" alt="Python">
-          <div class="card-body">
-            <h5 class="card-title">Python</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.</p>
-            <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>
-          </div>
+    <!-- Resume Section -->
+    <section id="resume" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">Resume</h2>
+                    <p class="section-subtitle">My professional background</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="resume-section">
+                        <h3>Download Resume</h3>
+                        <p>Get my complete resume with detailed information about my education, experience, and skills.</p>
+                        <a href="Sonalika_Singh_Resume.pdf" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-download"></i> Download PDF
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="video-section">
+                        <h3>Introduction Video</h3>
+                        <p>Watch my one-minute introduction to learn more about my journey and passion for data science.</p>
+                        <div class="video-container">
+                            <video controls class="img-fluid rounded">
+                                <source src="introduction-video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <!-- Skill 2 -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card">
-          <img src="Images/skills/2.png" class="card-img-top" alt="Data Visualization">
-          <div class="card-body">
-            <h5 class="card-title">Data Visualization</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.</p>
-            <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>
-          </div>
+    </section>
+
+    <!-- Blogs Section -->
+    <section id="blogs" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">My Blogs</h2>
+                    <p class="section-subtitle">Thoughts and insights on data science</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p class="mb-4">I regularly publish articles on Medium about data science, machine learning, and my learning journey.</p>
+                    <a href="https://medium.com/@singhsonalika5" target="_blank" class="btn btn-primary btn-lg">
+                        <i class="fab fa-medium"></i> Visit My Medium Profile
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
-      <!-- Skill 3 -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card">
-          <img src="Images/skills/3.png" class="card-img-top" alt="SQL">
-          <div class="card-body">
-            <h5 class="card-title">SQL</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.</p>
-            <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>
-          </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Let's connect and collaborate</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-md-4 text-center mb-4">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:singhsonalika5@gmail.com">singhsonalika5@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center mb-4">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <h4>GitHub</h4>
+                                <p><a href="https://github.com/Sonalikasingh17" target="_blank">Sonalikasingh17</a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center mb-4">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </div>
+                                <h4>LinkedIn</h4>
+                                <p><a href="https://linkedin.com/in/your-linkedin" target="_blank">Connect with me</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <!-- Skill 4 -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card">
-          <img src="Images/skills/4.png" class="card-img-top" alt="Data Storytelling">
-          <div class="card-body">
-            <h5 class="card-title">Data Storytelling</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.</p>
-            <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>
-          </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 Sonalika Singh. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/Sonalikasingh17" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/your-linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://medium.com/@singhsonalika5" target="_blank"><i class="fab fa-medium"></i></a>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </footer>
 
-<!-- Contact Me Section -->
-<section id="contact" class="contact-section text-center text-white bg-dark">
-  <div class="container">
-    <h2>Contact Me</h2>
-    <div class="row">
-      <div class="col-lg-6">
-        <p><i class="fas fa-envelope"></i> singhsonalika5@gmail.com</p>
-      </div>
-      <div class="col-lg-6">
-        <p><i class="fas fa-phone"></i> +91 8434756189</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-2 col-md-4 mb-4">
-        <a href="https://linkedin.com/in/sonalika-singh-994a151a8" target="_blank">
-          <img src="icons/linkedin.png" alt="LinkedIn" class="social-icon">
-          LinkedIn
-        </a>
-      </div>
-      <div class="col-lg-2 col-md-4 mb-4">
-        <a href="https://github.com/Sonalikasingh17" target="_blank">
-          <img src="icons/github.png" alt="GitHub" class="social-icon">
-          GitHub
-        </a>
-      </div>
-      <div class="col-lg-2 col-md-4 mb-4">
-        <a href="https://medium.com/@singhsonalika5" target="_blank">
-          <img src="icons/medium.png" alt="Medium" class="social-icon">
-          Medium
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Sticky Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="#home">Portfolio</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-
-<!-- Bootstrap JS and dependencies (jQuery and Popper) -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
