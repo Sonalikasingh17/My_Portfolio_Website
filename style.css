@@ -908,7 +908,7 @@ html {
 
 .profile-img {
     width: 350px;
-    height: 250px;
+    height: 350px;
     object-fit: cover;
     object-position: center 20%; /* move image down inside the circle */
     border: 8px solid rgba(var(--color-white), 0.2);
@@ -1250,9 +1250,8 @@ footer .social-links a:hover {
         width: 250px;
         height: 250px;
         margin-top: var(--space-32);
-        object-fit: contain; /* Show the whole image */
+        object-fit: cover; /* Show the whole image */
         object-position: center 20%; /* Keep head visible */
-        border-radius: 50%; /* still circular */
 }
 
     
@@ -1305,9 +1304,7 @@ footer .social-links a:hover {
     
     .profile-img {
         width: 200px;
-        height: 200px; /* adjust */
-        object-fit: cover;
-        object-position: center 20%; /* move image down inside the circle */
+        height: auto; /* adjust */
     }
     
     .project-content {
