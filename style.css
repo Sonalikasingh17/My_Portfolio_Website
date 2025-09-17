@@ -910,7 +910,6 @@ html {
     width: 350px;
     height: 350px;
     object-fit: cover;
-    object-position: center 20%; /* move image down inside the circle */
     border: 8px solid rgba(var(--color-white), 0.2);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-lg);
