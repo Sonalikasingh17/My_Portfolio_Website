@@ -1260,7 +1260,11 @@ footer .social-links a:hover {
         width: 250px;
         height: 250px;
         margin-top: var(--space-32);
-    }
+        object-fit: contain; /* Show the whole image */
+        object-position: center 20%; /* Keep head visible */
+        border-radius: 50%; /* still circular */
+}
+
     
     .hero-buttons .btn {
         margin-bottom: var(--space-16);
@@ -1311,7 +1315,9 @@ footer .social-links a:hover {
     
     .profile-img {
         width: 200px;
-        height: auto;
+        height: 250px; /* adjust */
+        object-fit: cover;
+        object-position: center 20%; /* move image down inside the circle */
     }
     
     .project-content {
