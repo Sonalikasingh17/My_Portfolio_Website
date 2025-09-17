@@ -737,7 +737,6 @@ select.form-control {
     format('woff2');
 }
 
-/* END PERPLEXITY DESIGN SYSTEM */
 /* Custom CSS for Sonalika Singh Portfolio */
 
 * {
@@ -909,7 +908,7 @@ html {
 
 .profile-img {
     width: 350px;
-    height: 350px;
+    height: 250px;
     object-fit: cover;
     object-position: center 20%; /* move image down inside the circle */
     border: 8px solid rgba(var(--color-white), 0.2);
@@ -917,15 +916,6 @@ html {
     box-shadow: var(--shadow-lg);
     animation: fadeInRight 1s ease;
 }
-/*
-.profile-img {
-  object-fit: cover;
-  object-position: center 20%; /* move image down inside the circle 
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-} 
-*/
 
 
 /* Section Styles */
@@ -1315,7 +1305,7 @@ footer .social-links a:hover {
     
     .profile-img {
         width: 200px;
-        height: 250px; /* adjust */
+        height: 200px; /* adjust */
         object-fit: cover;
         object-position: center 20%; /* move image down inside the circle */
     }
