@@ -905,7 +905,7 @@ html {
     color: var(--color-primary);
     transform: translateY(-3px);
 }
-
+/*
 .profile-img {
     width: 350px;
     height: 350px;
@@ -914,6 +914,18 @@ html {
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-lg);
     animation: fadeInRight 1s ease;
+} */
+
+.profile-img {
+    width: 280px;          /* adjust for your design */
+    height: 280px;
+    object-fit: cover;     /* ensures the image fills the circle and crops cleanly */
+    border-radius: 50%;    /* makes it a circle */
+    border: 8px solid #e0e0e0;  /* subtle border, optional */
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12); /* optional shadow */
+    background: #fff;
+    display: block;
+    margin: 0 auto;
 }
 
 
@@ -1300,8 +1312,8 @@ footer .social-links a:hover {
     }
     
     .profile-img {
-        width: 200px;
-        height: auto; /* adjust */
+        width: 140px;
+        height: 140px; /* adjust */
     }
     
     .project-content {
