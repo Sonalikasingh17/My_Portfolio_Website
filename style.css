@@ -920,9 +920,11 @@ html {
     width: 350px;          /* adjust for your design */
     height: 350px;
     object-fit: cover;     /* ensures the image fills the circle and crops cleanly */
-    border-radius: 50%;    /* makes it a circle */
-    border: 8px solid #e0e0e0;  /* subtle border, optional */
-    box-shadow: 0 8px 30px rgba(0,0,0,0.12); /* optional shadow */
+    border-radius: 50%;     /* makes it a circle */
+    border: 5px solid #F5F7FA;  /* very light border, adjust/remove as you like */
+    box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+    /*border: 8px solid #e0e0e0;  /* subtle border, optional */
+    /*box-shadow: 0 8px 30px rgba(0,0,0,0.12); /* optional shadow */
     background: #fff;
     display: block;
     margin: 0 auto;
@@ -1361,7 +1363,7 @@ footer .social-links a:hover {
 
 @media (max-width: 600px) {
     .profile-img {
-        width: 150px;
-        height: 150px;
+        width: 160px;
+        height: 160px;
     }
 }
