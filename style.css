@@ -1089,6 +1089,44 @@ html {
     border-radius: var(--radius-full);
     font-weight: var(--font-weight-medium);
 }
+.blog-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 5px 24px rgba(0,0,0,0.07);
+  overflow: hidden;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.blog-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 38px rgba(32,56,108,0.18);
+}
+
+.blog-img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 1.1rem 1rem 1.5rem;
+}
+
+.blog-content h4 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.blog-content p {
+  color: #434b53;
+  font-size: 0.96rem;
+  margin-bottom: 0.9rem;
+}
+
 
 /* Resume & Video Section */
 /*
