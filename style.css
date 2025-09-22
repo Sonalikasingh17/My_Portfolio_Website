@@ -1092,7 +1092,7 @@ html {
 
 /* Blog Cards */
 .blog-card {
-  background: #000 /*var(--color-text); /* Black background like projects */
+  background: var(--color-text); /* Black background like projects */
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
   overflow: hidden;
@@ -1113,7 +1113,7 @@ html {
   position: relative;
   overflow: hidden;
   height: 280px; /* Slightly taller for better image display */
-  background: #000 /*var(--color-text); */
+  background: var(--color-text); 
   flex-shrink: 0; /* Prevents image from shrinking */
 }
 
@@ -1159,7 +1159,7 @@ html {
   font-size: var(--font-size-lg); /* Slightly smaller for better fit */
   font-weight: var(--font-weight-semibold);
   margin-bottom: var(--space-12);
-  color:  #fff !important; /*  var(--color-white); /* White text on black background */
+  color:  var(--color-white); /* White text on black background */
   line-height: var(--line-height-tight);
 }
 
@@ -1168,25 +1168,6 @@ html {
   margin-bottom: var(--space-16);
   line-height: var(--line-height-normal);
   font-size: var(--font-size-sm); /* Smaller text for better fit */
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .blog-image {
-    height: 220px;
-  }
-  
-  .blog-content {
-    padding: var(--space-20);
-  }
-  
-  .blog-content h4 {
-    font-size: var(--font-size-base);
-  }
-  
-  .blog-content p {
-    font-size: var(--font-size-xs);
-  }
 }
 
 
@@ -1480,6 +1461,25 @@ footer .social-links a:hover {
     .contact-item {
         padding: var(--space-24) var(--space-16);
     }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .blog-image {
+    height: 220px;
+  }
+  
+  .blog-content {
+    padding: var(--space-20);
+  }
+  
+  .blog-content h4 {
+    font-size: var(--font-size-base);
+  }
+  
+  .blog-content p {
+    font-size: var(--font-size-xs);
+  }
 }
 
 @media (max-width: 480px) {
