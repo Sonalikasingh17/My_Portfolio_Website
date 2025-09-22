@@ -1100,6 +1100,8 @@ html {
   margin-bottom: var(--space-32);
   border: 1px solid var(--color-card-border);
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .blog-card:hover {
@@ -1110,14 +1112,16 @@ html {
 .blog-image {
   position: relative;
   overflow: hidden;
-  height: 250px; /* Fixed height like projects */
+  height: 280px; /* Slightly taller for better image display */
   background: var(--color-text);
+  flex-shrink: 0; /* Prevents image from shrinking */
 }
 
 .blog-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain; /* Shows full image without cropping */
+  background: var(--color-text); /* Black background around image */
   transition: all var(--duration-normal) var(--ease-standard);
 }
 
@@ -1140,26 +1144,51 @@ html {
 }
 
 .blog-card:hover .blog-image img {
-  transform: scale(1.1);
+  transform: scale(1.05); /* Smaller scale to keep text readable */
 }
 
 .blog-content {
-  padding: var(--space-32);
+  padding: var(--space-24); /* Slightly less padding */
+  flex-grow: 1; /* Takes remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .blog-content h4 {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-lg); /* Slightly smaller for better fit */
   font-weight: var(--font-weight-semibold);
-  margin-bottom: var(--space-16);
+  margin-bottom: var(--space-12);
   color: var(--color-white); /* White text on black background */
   line-height: var(--line-height-tight);
 }
 
 .blog-content p {
-  color: rgba(var(--color-white), 0.8); /* Slightly transparent white */
-  margin-bottom: var(--space-24);
+  color: rgba(255, 255, 255, 0.85); /* Explicit white with opacity */
+  margin-bottom: var(--space-16);
   line-height: var(--line-height-normal);
+  font-size: var(--font-size-sm); /* Smaller text for better fit */
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .blog-image {
+    height: 220px;
+  }
+  
+  .blog-content {
+    padding: var(--space-20);
+  }
+  
+  .blog-content h4 {
+    font-size: var(--font-size-base);
+  }
+  
+  .blog-content p {
+    font-size: var(--font-size-xs);
+  }
+}
+
 
 /*
 .blog-card {
