@@ -1092,7 +1092,7 @@ html {
 
 /* Blog Cards */
 .blog-card {
-  background: var(--color-text); /* Black background like projects */
+  background: #000 /*var(--color-text); /* Black background like projects */
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
   overflow: hidden;
@@ -1113,7 +1113,7 @@ html {
   position: relative;
   overflow: hidden;
   height: 280px; /* Slightly taller for better image display */
-  background: var(--color-text);
+  background: #000 /*var(--color-text); */
   flex-shrink: 0; /* Prevents image from shrinking */
 }
 
@@ -1159,7 +1159,7 @@ html {
   font-size: var(--font-size-lg); /* Slightly smaller for better fit */
   font-weight: var(--font-weight-semibold);
   margin-bottom: var(--space-12);
-  color: var(--color-white); /* White text on black background */
+  color:  #fff !important; /*  var(--color-white); /* White text on black background */
   line-height: var(--line-height-tight);
 }
 
