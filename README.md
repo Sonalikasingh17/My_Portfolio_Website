@@ -47,7 +47,7 @@ My_Portfolio_Website/
 - Personal journey and background
 - Technical skills with animated progress bars
 - Soft skills badges
-- Hobbies and interests
+- Hobbies and interests 
 
 ### 3. Projects
 - **Multilingual Language Classifier**: 27 languages recognition using Naive Bayes
